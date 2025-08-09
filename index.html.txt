@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Idle Merge Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body { margin:0; padding:0; height:100%; background:#88c070; font-family: Arial, sans-serif; }
+    #game-container { width:100vw; height:100vh; overflow:hidden; position:relative; }
+    #ad-banner {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:60px;
+      z-index:2000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      font-size:14px;
+    }
+    #ui-top {
+      position:absolute;
+      left:12px;
+      top:70px;
+      z-index:2000;
+      color:#fff;
+      text-shadow:0 1px 2px rgba(0,0,0,0.5);
+    }
+    .btn {
+      display:inline-block;
+      padding:8px 12px;
+      margin-right:8px;
+      background:rgba(255,255,255,0.12);
+      color:#fff;
+      border-radius:6px;
+      cursor:pointer;
+      user-select:none;
+      border:1px solid rgba(0,0,0,0.2);
+    }
+    #side-panel {
+      position:absolute;
+      right:12px;
+      top:70px;
+      width:220px;
+      z-index:2000;
+      color:#111;
+      background: rgba(255,255,255,0.92);
+      padding:10px;
+      border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+      font-size:14px;
+    }
+    #side-panel h3 { margin:0 0 8px 0; font-size:16px; }
+    #save-import { width:100%; margin-top:8px; }
+    #import-data { width:100%; height:60px; }
+  </style>
+</head>
+<body>
+  <!-- AdSense placeholder: Replace with your AdSense script/ins and keep inside this div. -->
+  <div id="ad-banner">AdSense Banner Placeholder — paste your AdSense code here (or keep placeholder for dev)</div>
+
+  <div id="game-container"></div>
+
+  <!-- Phaser -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+  <!-- Your game -->
+  <script src="main.js"></script>
+</body>
+</html>
